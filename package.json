@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.20.12",
+    "@crowdin/cli": "3.9.3",
     "@lingui/cli": "3.16.0",
     "@lingui/core": "3.16.0",
     "@lingui/macro": "3.16.0",
@@ -28,7 +29,11 @@
     "eject": "react-scripts eject",
     "_lingui": "yarn _lingui:extract && yarn _lingui:compile",
     "_lingui:compile": "lingui compile --strict",
-    "_lingui:extract": "lingui extract --clean"
+    "_lingui:extract": "lingui extract --clean",
+    "crowdin": "crowdin",
+    "crowdin:sync": "crowdin push && crowdin pull",
+    "crowdin:sync:sources": "crowdin push",
+    "crowdin:sync:translations": "crowdin pull"
   },
   "eslintConfig": {
     "extends": [
