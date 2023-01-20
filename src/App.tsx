@@ -10,6 +10,7 @@ function App({onChangeLanguage}: { onChangeLanguage: (locale: "en" | "ru" | "sp"
                 <img src={logo} className="App-logo" alt="logo"/>
                 <Trans>Test english</Trans>
                 <Trans>Test 1</Trans>
+                <Trans>Test 2</Trans>
             </header>
 
             <button onClick={() => onChangeLanguage("en")}>set en</button>
